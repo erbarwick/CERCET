@@ -1,9 +1,9 @@
-# Data files — track code, not raw data
-*.csv
-*.txt
-*.xlsx
-*.zip
-*.gz
+# # Data files 
+# *.csv
+# *.txt
+# *.xlsx
+# *.zip
+# *.gz
 
 # Python
 __pycache__/
@@ -24,3 +24,4 @@ Thumbs.db
 stations_map.html
 *.png
 station_change_log.csv
+.DS_Store
