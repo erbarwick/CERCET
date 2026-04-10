@@ -23,3 +23,4 @@ Thumbs.db
 # Outputs
 stations_map.html
 *.png
+station_change_log.csv
