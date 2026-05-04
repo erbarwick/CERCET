@@ -4,6 +4,8 @@
 # *.xlsx
 # *.zip
 # *.gz
+station_hour_sample_data/
+station_metadata/
 
 # Python
 __pycache__/

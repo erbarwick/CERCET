@@ -2,6 +2,7 @@
 # directory, builds a full change log of historical station records, and merges
 # the latest values (keyed on station ID) into the existing all_stations.csv.
 # Existing values are never overwritten — metadata only fills gaps.
+
 # Outputs: all_stations_merged.csv and station_change_log.csv
 
 import pandas as pd

@@ -170,10 +170,11 @@ def update_map(selected_types, ca_pm_range, abs_pm_range,
             search_msg = f'Centered on ({lat}, {lon})'
 
     # Build figure
-    fig = px.scatter_mapbox(
+    fig = px.scatter_map(
         filtered,
         lat='Latitude', lon='Longitude',
-        color='District',
+        color=filtered['District'].astype(str),
+        # color='District',
         color_discrete_map={str(k): v for k, v in DISTRICT_COLORS.items()},
         hover_name='Name',
         hover_data={
@@ -182,11 +183,12 @@ def update_map(selected_types, ca_pm_range, abs_pm_range,
             'CA PM': True, 'Abs PM': True,
             'Latitude': False, 'Longitude': False,
         },
-        mapbox_style='carto-positron',
+        map_style='carto-positron', # Note: Changed from mapbox_style to map_style
         zoom=zoom,
         center={'lat': center_lat, 'lon': center_lon},
         height=700,
     )
+
     fig.update_traces(marker={'size': 6, 'opacity': 0.75})
     fig.update_layout(margin={'r': 0, 't': 0, 'l': 0, 'b': 0},
                       legend_title_text='District',
