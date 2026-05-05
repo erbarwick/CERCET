@@ -1,10 +1,9 @@
 # # Data files 
 # *.csv
-# *.txt
+*.txt
 # *.xlsx
 # *.zip
-# *.gz
-station_hour_sample_data/
+*.gz
 station_metadata/
 
 # Python
