@@ -1,0 +1,27 @@
+Name 	Comment 	Units
+Timestamp 	The date and time of the beginning of the summary interval. For example, a date of 1/1/2012 indicates that the aggregate(s) contain measurements collected between 1/1/2012 00:00:00 and 1/1/2012 23:59:59. Note that hour, minute, and second values are always 0 for daily aggregations. The format is MM/DD/YYYY HH24:MI:SS. 	 
+Station 	Unique station identifier. Use this value to cross-reference with Metadata files. 	 
+District 	District # 	 
+Route 	Route # 	 
+Direction of Travel 	N | S | E | W 	 
+Lane Type 	A string indicating the type of lane. Possible values (and their meaning are:
+
+    CD (Coll/Dist)
+    CH (Conventional Highway)
+    FF (Fwy-Fwy connector)
+    FR (Off Ramp)
+    HV (HOV)
+    ML (Mainline)
+    OR (On Ramp)
+
+	 
+Station Length 	Segment length covered by the station in miles/km. 	 
+Samples 	Total number of samples received for all lanes. 	 
+% Observed 	Percentage of 5-minute lane points that were observed (e.g. not imputed). 	%
+Total Flow 	Sum of hourly flows over the day. Note that the basic 5-minute rollup normalizes flow by the number of good samples received from the controller. 	Veh/Day
+Delay (V_t=35) 	The average delay over the station length, with respect to a threshold speed of 35 mph. 	 
+Delay (V_t=40) 	The average delay over the station length, with respect to a threshold speed of 40 mph. 	 
+Delay (V_t=45) 	The average delay over the station length, with respect to a threshold speed of 45 mph. 	 
+Delay (V_t=50) 	The average delay over the station length, with respect to a threshold speed of 50 mph. 	 
+Delay (V_t=55) 	The average delay over the station length, with respect to a threshold speed of 55 mph. 	 
+Delay (V_t=60) 	The average delay over the station length, with respect to a threshold speed of 60 mph.

@@ -1,0 +1,29 @@
+# # Data files 
+# *.csv
+# *.txt
+# *.xlsx
+# *.zip
+# *.gz
+station_hour_sample_data/
+station_metadata/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+stations_map.html
+*.png
+station_change_log.csv
+.DS_Store
