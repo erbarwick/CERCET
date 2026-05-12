@@ -41,23 +41,21 @@ def inputParams():
 # View summary of available files for (start_year, end_year, districts, file_types) query
 pems.get_file_types()
 
-files = pems.get_files(
-    start_year=2020,
-    end_year=2026,
-    districts=all_districts,
-    file_types=['station_hour']
-)
+#files = pems.get_files(
+#    start_year=2020,
+#    end_year=2026,
+#    districts=all_districts,
+#    file_types=['station_hour']
+#)
 
 # Optional: explicitly define where you want the downloads to go in your new structure
 download_dir = str(BASE_DIR / 'data' / 'station_hour_sample_data' / 'text_station_hour')
 
-# files = pems.download_files(
-#     start_year=2020,
-#     end_year=2026,
-#     districts=all_districts,
-#     file_types=['station_hour'],
-#     months=None,
-#     save_path=download_dir
-# )
-
-# print(pd.DataFrame(files).head())
+#files = pems.download_files(
+#    start_year=2020,
+#    end_year=2026,
+#    districts=all_districts,
+#    file_types=['station_hour'],
+#    months=None,
+#    save_path=download_dir
+#)
