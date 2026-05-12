@@ -3,9 +3,9 @@
 The station_metadata folder is also included in the Box, but you probably won't need that since the metadata is already merged into `all_stations_merged.csv`.
 ## Python setup:
 Follow the guides in the `./scripts/` directory of this repository:
-- [[Installing Python WINDOWS]]
-- [[Installing Python MAC]]
-- [[Creating Python virtual environments and installing packages]]
+- [Installing Python WINDOWS](https://github.com/erbarwick/CERCET/blob/main/guides/Installing%20Python%20WINDOWS.md)
+- [Installing Python MAC](https://github.com/erbarwick/CERCET/blob/main/guides/Installing%20Python%20MAC.md)
+- [Creating Python virtual environments and installing packages](https://github.com/erbarwick/CERCET/blob/main/guides/Creating%20Python%20virtual%20environments%20and%20installing%20packages.md)
 
 # Caltrans PeMS Data Manager
 
@@ -15,7 +15,7 @@ This repository provides a set of tools to download, parse, extract, and visuali
 
 ## How to use this repository 
 ### Clone the repo
-If you don't have `git` installed, follow the guide in the `./guides` folder of this repository: [[Installing git on Windows or Mac]].
+If you don't have `git` installed, follow the guide in the `./guides` folder of this repository: [Installing git on Windows or Mac](https://github.com/erbarwick/CERCET/blob/main/guides/Installing%20git%20on%20Windows%20or%20Mac.md).
 
 Cloning the repository creates a new folder (directory) in whatever folder you run the command in, so keep in mind where you are. Run `pwd` to see your current working directory, then run these commands in Terminal (Mac) or PowerShell (Windows):
 ```sh
@@ -23,7 +23,7 @@ git clone https://github.com/erbarwick/CERCET.git
 cd CERCET
 ```
 ### Install dependencies
-**Guide:** [[Creating Python virtual environments and installing packages]]
+**Guide:** [Creating Python virtual environments and installing packages](https://github.com/erbarwick/CERCET/blob/main/guides/Creating%20Python%20virtual%20environments%20and%20installing%20packages.md)
 Before running anything, make sure you have the required Python libraries installed. In the root directory of the cloned repository (or whichever directory contains your `venv`), open Terminal or PowerShell and run:
 ```bash
 python3 -m pip install -r requirements.txt
