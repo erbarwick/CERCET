@@ -91,7 +91,7 @@ Note: It will prompt you for your PeMS username and password in the terminal.
 ### Update station metadata
 If you've added new raw metadata text files to `data/station_metadata/`, you need to update the master list so the map and extraction tools have the correct coordinates:
 ```bash
-python scripts/station_parser.py
+python3 scripts/station_parser.py
 ```
 This creates a new `all_stations_merged.csv` in the `data/` folder.
 
@@ -100,7 +100,7 @@ This creates a new `all_stations_merged.csv` in the `data/` folder.
 ### Find stations on the map
 Launch the interactive map:
 ```bash
-python scripts/map_stations.py
+python3 scripts/map_stations.py
 ```
 After running this, open your web browser and go to `http://127.0.0.1:8050`. Use the sidebar to filter stations. Hover over dots on the map to see their **Station ID**.
 
@@ -111,7 +111,7 @@ Once you know which Station IDs you want to analyze, open `scripts/extract_stati
 3. Update the `START` and `END` date strings.
 4. Run the script:
 ```bash
-python scripts/extract_stations.py
+python3 scripts/extract_stations.py
 ```
 The script will print out table containing only the data you requested.
 
